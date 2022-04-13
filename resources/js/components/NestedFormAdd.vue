@@ -66,6 +66,9 @@ export default {
               this.field.children.length
             );
           }
+
+          field.validationKey = field.attribute;
+
           if (field.displayIf) {
             field.displayIf = JSON.parse(
               JSON.stringify(field.displayIf).replace(
